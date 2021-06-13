@@ -1,0 +1,60 @@
+.input {
+  width: 100%;
+  position: relative;
+
+  &__error {
+    position: absolute;
+    color: $red-primary;
+    right: 0;
+    bottom: -1.5rem;
+    font-size: 1.2rem;
+
+    & + input {
+      border-color: $red-primary;
+    }
+  }
+
+  &__control {
+    border: 1px solid $border-primary;
+    padding: 1rem 0.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    border-radius: 0.4rem;
+    transition: all 0.4s;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:placeholder-shown {
+      color: #929bad;
+    }
+
+    &[type='checkbox'] {
+      opacity: 0;
+      width: 2rem;
+
+      & + span {
+        margin-left: 1rem;
+      }
+
+      & + span::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid #b0baca;
+        border-radius: 0.4rem;
+        cursor: pointer;
+      }
+
+      &:checked + span::after {
+        background: url('./assets/check.svg');
+        border: 0;
+      }
+    }
+  }
+}

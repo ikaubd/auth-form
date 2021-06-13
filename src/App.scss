@@ -1,0 +1,10 @@
+@import './styles/variables';
+@import './styles/global';
+
+@import './pages/pages';
+@import './components/components';
+
+.page {
+  background-color: $background-primary;
+  padding: 1rem;
+}

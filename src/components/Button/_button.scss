@@ -1,0 +1,42 @@
+.btn {
+  width: 100%;
+  border-radius: 0.3rem;
+  padding: 1.2rem 0;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+
+  &__common {
+    font-size: 1.8rem;
+    background-color: $green-primary;
+    color: $white-primary;
+    border: 0;
+    font-weight: 500;
+
+    &:hover {
+      background-color: $green-secondary;
+    }
+  }
+
+  &__sign-in {
+    padding: 1.2rem 0 1.2rem 5.6rem;
+    font-size: 1.4rem;
+    text-align: left;
+    background-color: $white-secondary;
+    border: 1px solid $border-primary;
+    color: $link-primary;
+    font-weight: 400;
+
+    &:hover {
+      color: $link-secondary;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 1.3rem;
+    transform: translateY(-50%);
+  }
+}

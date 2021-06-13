@@ -1,0 +1,21 @@
+.auth-page {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 36rem;
+
+    &-input {
+      margin-bottom: 2.4rem;
+      width: 100%;
+    }
+
+    &-checkbox {
+      margin: 2.65rem 0;
+    }
+
+    &-submit {
+      margin-bottom: 0.8rem;
+    }
+  }
+}
